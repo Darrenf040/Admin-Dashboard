@@ -3,12 +3,12 @@ body{
     grid-template-columns: 1fr 3fr;
     height: 100vh;
     margin: 0;
+    grid-template-rows: 1fr 5fr;
 }
 ul{
     list-style: none;
 }
 .sidebar{
-    box-sizing: border-box;
     background-color: blue;
     padding: 20px 50px 10px 20px;
     font-size: 1.2rem;
@@ -27,4 +27,48 @@ ul{
 }
 .nav li{
     margin:10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    width: 25px;
+}
+.nav-icon{
+    margin-right: 10px;
+}
+
+.header{
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr minmax(250px, 1fr);
+    align-items: center;
+    padding: 10px 3%;
+}
+#search{
+    width: clamp(150px, 100%, 800px);
+    border-radius: 20px;
+    height: 25px;
+    background-color: gray;
+    border-style: none;
+    margin-left: 10px;
+}
+.profile-content{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+}
+.profile-content .profile-img{
+    width: 40px;
+    height: 40px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.search-container{
+    display: flex;
 }
