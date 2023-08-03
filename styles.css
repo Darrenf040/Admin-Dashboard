@@ -4,6 +4,7 @@ body{
     height: 100vh;
     margin: 0;
     grid-template-rows: 1fr 5fr;
+    overflow-y: hidden;
 }
 ul{
     list-style: none;
@@ -84,7 +85,7 @@ ul{
 }
 .profile-status h1{
     margin: 0;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 .profile-status p{
     margin: 0;
@@ -107,4 +108,45 @@ ul{
 }
 .profile-status .profile-img{
     height: 70px;
+}
+
+.main-content{
+    background-color: gray;
+    padding: 20px;
+}
+.card-content{
+    display: flex;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 70%;
+}
+.card{
+    width: 100%;
+    min-width: 200px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 0px;
+    border-left: yellow solid 8px;
+    max-height:135px ;
+}
+.card h3, .card p{
+    margin: 0;
+}
+.card-text{
+    height: 75%;
+    overflow-y: scroll;
+}
+.project-icon-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-right: 40px;
+}
+.main-content h1{
+    margin: 0;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
