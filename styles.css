@@ -1,3 +1,5 @@
+
+/*Sidebar*/
 body{
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -39,13 +41,14 @@ ul{
     margin-right: 10px;
 }
 
+/********Header**********/
 .header{
     background-color: whitesmoke;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 2fr minmax(250px, 1fr);
     align-items: center;
-    padding: 10px 3%;
+    padding: 0px 3%;
 }
 #search{
     width: clamp(150px, 100%, 800px);
@@ -110,17 +113,19 @@ ul{
     height: 70px;
 }
 
+/*******Project cards******/
 .main-content{
     background-color: gray;
     padding: 20px;
 }
 .card-content{
     display: flex;
+    gap: 30px;
 }
 .projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
     width: 70%;
 }
 .card{
@@ -128,7 +133,7 @@ ul{
     min-width: 200px;
     background-color: white;
     border-radius: 10px;
-    padding: 20px 0px;
+    padding: 20px 10px;
     border-left: yellow solid 8px;
     max-height:135px ;
 }
@@ -145,8 +150,64 @@ ul{
     gap: 10px;
     margin-right: 40px;
 }
-.main-content h1{
+.main-content .tag{
     margin: 0;
     font-size: 1.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+/*******right cards*****/
+.long-cards-container{
+    flex: 1;
+    display: grid;
+    grid-template-rows: 1fr 10px 1fr;
+    gap: 20px;
+}
+.long-card{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.long-card-info{
+    height: calc(100%/3);
+    border-bottom: solid 1px gray;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    padding: 0 10px;
+
+}
+.long-card-info h3, .long-card-info p{
+    margin: 0;
+    font-size: 1rem;
+}
+.long-card-info p{
+    font-size: .8rem;
+    margin-top: 5px;
+}
+.long-card-trending{
+    display: flex;
+    height: calc(100%/4);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.long-card-trending p{
+    margin: 0;
+}
+.trending-profile-pic{
+    width: 30px;
+    margin-right: 8px;
+}
+.trending-profile-pic img{
+    width: 100%;
+    border-radius:50% ;
+}
+.top-main-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#annoucment{
+    margin-right: 90px;
 }
