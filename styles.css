@@ -72,3 +72,39 @@ ul{
 .search-container{
     display: flex;
 }
+
+.profile-status{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-status img{
+    width: 70px;
+    height: 100%;
+}
+.profile-status h1{
+    margin: 0;
+    font-size: 1.5rem;
+}
+.profile-status p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.header-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.header-btn{
+    padding: 10px 0;
+    width: 100%;
+    min-width: 80px;
+    max-width: 120px;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+    border-style: none;
+}
+.profile-status .profile-img{
+    height: 70px;
+}
