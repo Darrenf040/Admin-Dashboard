@@ -23,6 +23,7 @@ ul{
     display: grid;
     grid-template-rows: 80px 220px 1fr ;
     font-weight: bold;
+    gap:30px;
 }
 .sidebar h1{
     margin: 0;
