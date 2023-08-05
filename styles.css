@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 /*Sidebar*/
 body{
     display: grid;
@@ -118,25 +120,26 @@ ul{
     background-color: gray;
     padding: 20px;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 3fr 220px;
     grid-template-rows: 20px 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 
 .projects{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
-    width: 80%;
+    gap: 15px;
+    /* grid-auto-rows: 100%; */
+    width: 100%;
 }
 .card{
     width: 100%;
-    min-width: 200px;
+    height: 100%;
     background-color: white;
     border-radius: 10px;
-    padding: 20px 10px;
+    padding: 20px 10px 40px 10px;
     border-left: yellow solid 8px;
-    max-height:135px ;
+    max-height:200px ;
 }
 .card h3, .card p{
     margin: 0;
@@ -153,7 +156,7 @@ ul{
 }
 .main-content .tag{
     margin:0 ;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 /*******right cards*****/
@@ -161,13 +164,14 @@ ul{
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1fr 10px 1fr;
-    gap: 20px;
+    gap: 30px;
 }
 .long-card{
     background-color: white;
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    padding: 15px 20px 0 20px;
 }
 .long-card-info{
     height: calc(100%/3);
@@ -175,7 +179,6 @@ ul{
     display: flex;
     flex-direction:column ;
     justify-content: center;
-    padding: 0 10px;
 
 }
 .long-card-info h3, .long-card-info p{
@@ -189,8 +192,6 @@ ul{
 .long-card-trending{
     display: flex;
     height: calc(100%/4);
-    padding: 10px;
-    box-sizing: border-box;
 }
 .long-card-trending p{
     margin: 0;
@@ -204,3 +205,6 @@ ul{
     border-radius:50% ;
 }
 
+.section-3{
+    border: none;
+}
